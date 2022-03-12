@@ -2,7 +2,7 @@
 #faf4ed
 #232136 rose pine moon base
 #3e8fb0 rose pine moon pine
-#907aa9
+#f2e9e1
 
 */
 
@@ -10,8 +10,15 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+@media screen and (max-width:600px) {
+    main {
+        display:flex;
+        flex-direction: column;
+    }
+}
+
 footer {
-    position:absolute;
+    position:fixed;
     bottom:15px;
     width: 100%;
     text-align: center;
@@ -21,9 +28,7 @@ html {
     background-color: #faf4ed;
 }
 
-h1, h2, h3 {
-    display:flex;
-    justify-content: left;
+h1 {
     color:#232136 ;
     max-width: 650px;
 }
@@ -31,9 +36,6 @@ h1, h2, h3 {
 p {
     font-family: 'EB Garamond', serif;
     color: #232136;
-    display: flex;
-    justify-content: left;
-    max-width: 600px;
 }
 
 .navbar{
@@ -49,18 +51,11 @@ p {
     text-decoration: none;
     margin-right: 15px;
     font-size:25px;
-    color:#232136;
-}
-
-.navbar a:hover {
     color:#3e8fb0;
 }
 
-@media screen and (max-width:600px) {
-    main {
-        display:flex;
-        flex-direction: column;
-    }
+.navbar a:hover {
+    color:#232136;
 }
 
 button {
@@ -68,27 +63,104 @@ button {
     background-color:#faf4ed;
     color: #3e8fb0;
     font-size: 35px;
+    text-align:center;
 }
 
 button:hover {
     color: #232136;
 }
 
+.newnote{
+    border: 0;
+    background-color:#faf4ed;
+    color: #3e8fb0;
+    margin-left:250px;
+}
 .createnote {
-    padding-left: 250px;
-    font-size:20px;
+    font-size:25px;
 }
 
 .slideout {
-    padding-left:150px;
+    padding-left:50px;
     font-size:25px;
+    background-color: #f2e9e1;
+    border: 0;
+}
+
+.mainnote {
+    border: 0;
+    color: #3e8fb0;
+    font-size: 20px;
 }
 
 .noteslist {
     border: 0;
+    color: #3e8fb0;
+    font-size: 15px;
+}
+
+ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+
+textarea {
+    font-size: 15px;
+    outline: none;
+    resize: none;
+    order: none;
+}
+
+.save {
+    border: 0;
     background-color:#faf4ed;
     color: #3e8fb0;
     font-size: 15px;
-    text-decoration:none;
-    
+}
+
+.delete {
+    border: 0;
+    background-color:#faf4ed;
+    color: #232136;
+    font-size: 15px;
+}
+
+.delete:hover {
+    color: #3e8fb0;
+}
+
+.entirepage {
+    display:flex;
+    flex-direction: row;
+    height: 100vw;
+}
+
+.leftside {
+    width: 15vw;
+    background-color:#f2e9e1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.mainnote, .noteslist{
+    background-color:#f2e9e1;
+}
+
+.rightside{
+    width: 85vw;
+}
+
+.textbox_area{
+    margin: auto;
+    width: 50%;
+    padding-top: 10%;
+    display:flex;
+    flex-direction: row;
+}
+
+.savedel{
+    padding-left:30%;
 }

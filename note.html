@@ -10,17 +10,11 @@
     <link href="CSS/style.css" rel="stylesheet">
     <title>Note</title>
 </head>
-<main>
-    <nav class="navbar">
-        <h1 class="header">
-            <a Href=#>About</a>
-            <a Href=#>Docs</a>
-        </h1>
-    </nav>
-    <nav>
+<section class="entirepage">  
+    <nav class="leftside">
         <button class="slideout"
                 type="button">
-            <<
+            &lt;&lt;
         </button>
         <ul>
             <li>
@@ -43,7 +37,35 @@
             </li>
         </ul>
     </nav>
-</main>
+    <main class="rightside">
+        <nav class="navbar">
+            <h1 class="header">
+                <a Href=#>About</a>
+                <a Href=#>Docs</a>
+            </h1>
+        </nav>
+        <div class="textbox_area">
+            <button class="createnote"
+                    type="button">
+                +
+            </button>
+            <div class="textbox_right">
+            <section class="text_box">
+            <textarea rows="15" cols="50" placeholder="your note here"></textarea>
+            </section>
+            <div class="savdel">
+            <button class="save"
+                    type="button">
+                save
+            </button>
+            <button class="delete"
+                    type="button">
+                delete
+            </button>
+            </div>
+        </div>
+    </main>
+</section>
 <footer>
     created by christina yin
 </footer>
