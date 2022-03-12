@@ -10,13 +10,6 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-@media screen and (max-width:600px) {
-    main {
-        display:flex;
-        flex-direction: column;
-    }
-}
-
 footer {
     position:fixed;
     bottom:15px;
@@ -163,4 +156,10 @@ textarea {
 
 .savedel{
     padding-left:30%;
+}
+
+@media screen and (max-width:600px) {
+    .textbox_area{
+        padding-left: 30px
+    }
 }
