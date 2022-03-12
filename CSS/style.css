@@ -1,101 +1,94 @@
 /*
-#04050C blackcurrant
-#CFADFF Mauve
-#FAE9B3 banana mania
-#DE5B54 flamingo
+#faf4ed
+#232136 rose pine moon base
+#3e8fb0 rose pine moon pine
+#907aa9
+
 */
 
 * {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+footer {
+    position:absolute;
+    bottom:15px;
+    width: 100%;
+    text-align: center;
+}
+
 html {
-    background-color: #FAE9B3;
+    background-color: #faf4ed;
 }
 
 h1, h2, h3 {
     display:flex;
     justify-content: left;
-    color: #04050C;
+    color:#232136 ;
     max-width: 650px;
 }
 
 p {
     font-family: 'EB Garamond', serif;
-    color: #04050C;
+    color: #232136;
     display: flex;
     justify-content: left;
     max-width: 600px;
 }
 
-.about {
-    display: flex;
-    flex-direction: row;
-}
-
-.navbar {
-    position: sticky;
-    top: 0;
-}
-
-.navbar li {
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.navbar ul{
+.navbar{
     display: flex;
     list-style-type: none;
-    justify-content: space-evenly;
+    justify-content: right;
     align-items: stretch;
     flex-direction: row;
-    text-align: center;
-    font-size: 25px;
-    margin: 0%;
-    background-color:#CFADFF;
+    text-align: right;
 }
 
-.navbar a, .blognav a {
+.navbar a {
     text-decoration: none;
-    color: #04050C;
+    margin-right: 15px;
+    font-size:25px;
+    color:#232136;
 }
 
-.navbar li:hover, .blognav a:hover {
-    background-color:#DE5B54;
+.navbar a:hover {
+    color:#3e8fb0;
 }
 
-.navbar li:visited, .blognav ul:visited  {
-    background-color: #CFADFF;
+@media screen and (max-width:600px) {
+    main {
+        display:flex;
+        flex-direction: column;
+    }
 }
 
-.blognav ul{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-evenly;
-    align-items: left;
+button {
+    border: 0;
+    background-color:#faf4ed;
+    color: #3e8fb0;
+    font-size: 35px;
 }
 
-#JSBackground p, #variables p{
-    font-family: 'EB Garamond', serif;
-    max-width: 750px;
+button:hover {
+    color: #232136;
 }
 
-#photo {
-    max-width: 300px;
-    max-height: 700px;
-    margin-left: 10px;
-    padding-top: 50px;
-
-}
-.anime {
-    margin-left: 40px;
+.createnote {
+    padding-left: 250px;
+    font-size:20px;
 }
 
-pre code {
-    font-family: monospace;
-    border: 1px solid #DE5B54;
-    display: block;
-    background-color:#CFADFF;
-    color:#04050C;
-    max-width: 500px;
+.slideout {
+    padding-left:150px;
+    font-size:25px;
+}
+
+.noteslist {
+    border: 0;
+    background-color:#faf4ed;
+    color: #3e8fb0;
+    font-size: 15px;
+    text-decoration:none;
+    
 }
